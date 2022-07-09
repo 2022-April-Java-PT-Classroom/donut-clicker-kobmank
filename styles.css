@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar{ 
+    background: turquoise; 
+    height: 60px;
+    padding: 0.5rem calc((100vw-1200px)/2); 
+    /* padding: 2% 6%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+} 
+
+.navbar__logo{
+    color: white;
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar__link{
+    color: white;
+    text-decoration: none;
+    padding: 0rem 1rem;
+} 
+
+.navbar__link:hover{
+    color: lightsalmon;
+}  
+
+.title{
+    text-align: center;
+} 
+
+h1{
+    background-image: url(./images/donutmult.jpg);
+}
+
+/* start of game */
+.start{
+    background-color: pink; 
+    border: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 32rem;
+} 
+
+.start p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #040d4c;
+} 
+
+/* start of  clicker btns */
+/* donut clicker button */ 
+/* select the divs not the sections */
+.getDonutButton{
+    background-color: skyblue;
+    color: white; 
+    font-size: 36px;
+    border-radius: 50%;
+    height: 300px; 
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.getDonutButton:hover{
+    background-image: url('images/donclimg.jpg');
+} 
+
+
+
+.buyAuto, .buyMulti{
+    background-color: gray;
+    color: white; 
+    font-size: 22px;
+    border-radius: 50%;
+    height: 150px; 
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.buyMulti:hover{
+    background-color: rgb(59, 244, 13);
+}
+
+.buyAuto:hover{
+    background-color: rgb(59, 244, 13);
+}
+
+/* reset button */
+.reset{
+    border: none; 
+    background-color: red; 
+    height: 60px;
+    width: 60px;
+    cursor: pointer; 
+    text-align: center; 
+    color: white; 
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.reset:hover{
+    background-color: green;
+}
+
+
+
+
+
+footer{
+
+    background-color: turquoise;
+    color: rgba(12, 0, 0, 0.417);
+    /* padding: 1em 0; */
+    text-align: center;
+}
+
