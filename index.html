@@ -5,9 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+  <body> 
+    <!-- navbar--> 
+    <nav class="navbar"> 
+      <a href="" class="navbar__logo">FRED THE BAKER</a> 
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav__menu">      
+        <a href="/" class="navbar__link">HOME</a>
+        <a href="https://orteil.dashnet.org/cookieclicker/" class="navbar__link">ORIGINAL GAME</a>
+        <a href="#contact" class="navbar__link">CONTACT</a>        
+      </div>
+    </nav>
+     
+    <div class="container">    
+      <main>
+        <div class="title">
+          <h1>Donut Collecters</h1>
+          <!-- <i class="fa-solid fa-donut"></i> -->
+        </div> 
+        <!-- start of game -->
+        <div class="start">
+          <!-- Donuts -->
+          <section class="userDonuts">
+            <div class="getDonutButton">Get Donut</div>
+            <p id="donutTitle">Donuts = <span class="donutValue">0</span></p>
+          </section>
+          <br>
+          <!--Auto Clicks  -->
+          <section class="autoClicks">
+            <div class="buyAuto">Buy Auto Clicker</div>
+            <br>
+            <p>Auto Clickers = <span class="numAutoClickers">0</span></p> 
+            <p>Auto Clicker Price = <span class="autoClickerPrice">100</span><span> Donuts</span></p>
+          </section>
+          <br><br>
+          <!-- Multipliers -->
+          <section class="multis">
+            <div class="buyMulti">Buy Mulitiplier</div> 
+            <br>
+            <p>Multipliers Bought = <span id="numMultis">0</span></p>
+            <p>Multiplier Price = <span class="multiPrice">10</span><span> Donuts</span></p>
+          </section>
+          <button class="reset">Reset</button>
+        </div>
+      </main>
+    </div>
+    <footer> 
+      &copy 2022 Coding Donut Business
+    </footer>
+    <script type="module" src="./index.js"></script>  
+    <script type="module" src="./DonutMaker.js"></script>   
   </body>
 </html>
